@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="index_bg" src='../images/bgimg.jpg'></image>
+    <view class="box">
+      <label class='question'>
+        日常饮食
+      </label>
+      <view class='options'>
+        <view class='option'>
+          <view class='line'>
+            <text>一个月我要</text>
+            <input type='text' class='days'></input><text>天自己做饭</text>
+          </view>
+        </view>
+        <view class='option'>
+          <view class='line'>
+            <text>一个月我要</text>
+            <input type='text' class='days'></input><text>天到餐厅就餐</text>
+          </view>
+        </view>
+      </view>
+    <view class='next' bindtap='next'>下一步</view>
+    </view>
+    <view class='aboutUs'>
+      <image src='../images/logo_bottom.png'></image>
+    </view>
+    <button class='contact' open-type="contact">
+      <image src='../images/contact.png'></image>
+    </button>
+</view>

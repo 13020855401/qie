@@ -1,0 +1,37 @@
+
+<view class="container" style='heihgt:{{screenHeight}}rpx'>
+  <image src='../images/home_bg_02.png' class='middle' style="height:{{screenHeight}}rpx"></image>
+  <image src='../images/home_bg_01.png' class='top'></image>
+  <image src='../images/home_bg_03.png' class='bottom'></image>
+  <view tyle='margin-top:{{(screenHeight-420-350-2*83)/3}}rpx' class='btns'>
+    <view wx:if='{{array1.length>0}}' style='margin-bottom:{{(screenHeight-420-350-2*83)/3}}rpx' class='selectBtn'>
+      <image src='../images/btn_03.png'></image>
+      <picker bindchange="chang1" value="{{index1}}" range-key="{{'city'}}" range="{{array1}}">
+        <view wx:if="{{index1>-1}}" class="picker">
+          {{array1[index1].city}}
+        </view>
+        <view wx:if="{{index1<=-1}}" class="picker">
+          {{array1Tip}}
+        </view>
+      </picker>
+    </view>
+    <view wx:if='{{array2.length>0}}' style='margin-bottom:{{(screenHeight-420-350-2*83)/3}}rpx' class='selectBtn'>
+      <image src='../images/btn_03.png'></image>
+      <picker bindchange="chang2" value="{{index2}}" range-key="{{'text'}}" range="{{array2}}">
+        <view wx:if="{{index2>-1}}" class="picker">
+          {{array2[index2].text}}
+        </view>
+        <view wx:if="{{index2<=-1}}" class="picker">
+          {{array2Tip}}
+        </view>
+      </picker>
+    </view>
+  </view>
+    <button class='next' bindtap='next'>
+      <image src='../images/btn_07.png'></image>
+    </button>
+  <image class='logo' src='../images/logo_bottom.png'></image>
+   <button class='contact' open-type="contact">
+      <image src='../images/contact.png'></image>
+    </button>
+</view>

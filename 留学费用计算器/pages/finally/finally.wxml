@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container" style='heihgt:{{screenHeight}}rpx'>
+  <image src='../images/finally_02.png' class='middle' style="height:{{screenHeight}}rpx"></image>
+  <image src='../images/finally_01.png' class='top'></image>
+  <image src='../images/finally_03.png' class='bottom'></image>
+  <text class='detail' style='height:{{(screenHeight-559-517)}}rpx;'>
+    <text>{{min_money}}</text>~<text style='margin-right:30rpx;'>{{max_money}}</text>万元
+  </text>
+  <image class='logo' src='../images/logo_bottom.png'></image>
+   <button class='contact' open-type="contact">
+      <image src='../images/contact.png'></image>
+    </button>
+</view>

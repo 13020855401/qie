@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container" style='heihgt:{{screenHeight}}rpx'>
+  <image src='../images/bg_02.jpg' class='middle' style="height:{{screenHeight}}rpx"></image>
+  <image src='../images/bg_01.jpg' class='top'></image>
+  <image src='../images/bg_03.jpg' class='bottom'></image>
+  <text class='detail' style='height:{{(screenHeight-260-256)}}rpx;'>
+    基于启俄留学公司搜集总结了大量实际消费的数据，过精密的演算为同学们设计出一套完整的、根据同学们个人的实际花费水平的留学费用计算器
+  </text>
+  <view bindtap='next' class='begin'>立即计算</view>
+  <image class='logo' src='../images/logo_bottom.png'></image>
+   <button class='contact' open-type="contact">
+      <image src='../images/contact.png'></image>
+    </button>
+</view>

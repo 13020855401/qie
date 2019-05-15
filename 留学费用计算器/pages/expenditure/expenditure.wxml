@@ -1,0 +1,9 @@
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker" wx:if="{{index!=''}}">
+     已选择消费方式： {{array[index]}}
+    </view>
+    <view class='placeholder' wx:else>请选择消费方式</view>
+  </picker>
+  <button bindtap='next' class='btn'>下一步</button>
+</view>

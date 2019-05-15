@@ -1,0 +1,74 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.1",
+	"appid": "wx7ef03df133de10b8",
+	"projectname": "%E7%95%99%E5%AD%A6%E8%B4%B9%E7%94%A8%E8%AE%A1%E7%AE%97%E5%99%A8",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "选择国家",
+					"pathName": "pages/country/country",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "结算",
+					"pathName": "pages/finally/finally",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "居住条件",
+					"pathName": "pages/house/house",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "日常饮食",
+					"pathName": "pages/cookie/cookie",
+					"scene": null
+				}
+			]
+		}
+	}
+}

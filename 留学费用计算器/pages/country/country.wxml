@@ -1,0 +1,22 @@
+
+<view class="container" style='heihgt:{{screenHeight}}rpx'>
+  <image src='../images/home_bg_02.png' class='middle' style="height:{{screenHeight}}rpx"></image>
+  <image src='../images/home_bg_01.png' class='top'></image>
+  <image src='../images/home_bg_03.png' class='bottom'></image>
+  <text class='tip'>{{tip}}？</text>
+  <view style='margin-top:{{(screenHeight-420-350-optionArray.length*83)/(optionArray.length+1)}}rpx' class='btns'>
+    <view style='margin-bottom:{{(screenHeight-420-350-optionArray.length*83)/(optionArray.length+1)}}rpx' bindtap='chooseOption' wx:for-index="itemIndex" data-money ="{{item.money}}" data-percentage ="{{item.percentage}}" data-index="{{itemIndex}}" wx:for='{{optionArray}}' class='selectBtn'>
+      <image wx:if="{{itemIndex != optionIndex}}" src='../images/btn_03.png'></image>
+      <image wx:if="{{itemIndex == optionIndex}}" src='../images/btn_03_active.png'></image>
+      <view wx:if="{{arrayType=='diet'}}">{{item.text}}<input data-index='{{itemIndex}}' value="{{item.days}}" bindinput="inputDays" type="number" />天</view>
+      <view wx:if="{{arrayType!='diet'}}">{{item.text}}</view>
+    </view>
+  </view>
+  <button class='next' bindtap='next'>
+    <image src='../images/btn_07.png'></image>
+  </button>
+  <image class='logo' src='../images/logo_bottom.png'></image>
+   <button class='contact' open-type="contact">
+      <image src='../images/contact.png'></image>
+    </button>
+</view>

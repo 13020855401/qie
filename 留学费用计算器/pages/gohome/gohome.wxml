@@ -1,0 +1,9 @@
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker" wx:if="{{index!=''}}">
+     已选择回国时间： {{array[index]}}
+    </view>
+    <view class='placeholder' wx:else>请选择回国时间</view>
+  </picker>
+  <button bindtap='next' class='btn'>下一步</button>
+</view>
