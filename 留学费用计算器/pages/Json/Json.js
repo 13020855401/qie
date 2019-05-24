@@ -71,7 +71,7 @@ const AllArray = [
     ]
   },
   {
-    city:"圣披德堡",  
+    city:"圣彼得堡",  
     education : [ //学历
       {
         text:"本科",
@@ -142,7 +142,7 @@ const AllArray = [
     ]
   },
   {
-    city:"碦山",  
+    city:"喀山",  
     education : [ //学历
       {
         text:"本科",
