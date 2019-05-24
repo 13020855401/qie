@@ -84,3 +84,11 @@ left:0;
   width: 243rpx;
   height: 84rpx;
 }
+.dietTitle{
+  position: absolute;
+  top: 30px;
+  width: 90%;
+  text-align:center;
+  color: #fff;
+  left: 5%;
+}
